@@ -83,88 +83,85 @@ good news: you can have it both ways! just call "breakerbreaker".
 
 use this little javascript routine to break text into phrases...
 
-''''
-//   
-// breakerbreaker -- a routine to break text into phrases   
-//   
-var s=$("#theinput").val()   
-//   
-// #1 -- regularize line-endings and delete trailing spaces   
-//   
-while (s.indexOf("rn")  
--1) {s=s.replace(/rn/g,"n")}   
-while (s.indexOf("r")  
--1) {s=s.replace(/r/g,"n")}   
-//   
-while (s.indexOf(" n")  
--1) {s=s.replace(/ n/g,"n")}   
-//   
-// #2 -- introduce space/linebreak combination at phrases   
-//   
-s=s.replace(/. /g,". n")   
-s=s.replace(/, /g,", n")   
-s=s.replace(/; /g,"; n")   
-s=s.replace(/: /g,": n")   
-s=s.replace(/? /g,"? n")   
-s=s.replace(/! /g,"! n")   
-s=s.replace(/" /g,'" n')   
-s=s.replace(/) /g,") n")   
-//   
-s=s.replace(/ "/g,' n"')   
-s=s.replace(/ (/g," n(")   
-//   
-s=s.replace(/ -- /g," n-- n")   
-//   
-s=s.replace(/ about /g," nabout ")   
-s=s.replace(/ also /g," nalso ")   
-s=s.replace(/ and /g," nand ")   
-s=s.replace(/ as /g," nas ")   
-s=s.replace(/ because /g," nbecause ")   
-s=s.replace(/ between /g," nbetween ")   
-s=s.replace(/ both /g," nboth ")   
-s=s.replace(/ but /g," nbut ")   
-s=s.replace(/ by /g," nby ")   
-s=s.replace(/ could /g," ncould ")   
-s=s.replace(/ ever /g," never ")   
-s=s.replace(/ for /g," nfor ")   
-s=s.replace(/ from /g," nfrom ")   
-s=s.replace(/ have /g," nhave ")   
-s=s.replace(/ how /g," nhow ")   
-s=s.replace(/ if /g," nif ")   
-s=s.replace(/ in /g," nin ")   
-s=s.replace(/ inside /g," ninside ")   
-s=s.replace(/ into /g," ninto ")   
-s=s.replace(/ is /g," nis ")   
-s=s.replace(/ may /g," nmay ")   
-s=s.replace(/ might /g," nmight ")   
-s=s.replace(/ minus /g," nminus ")   
-s=s.replace(/ must /g," nmust ")   
-s=s.replace(/ never /g," nnever ")   
-s=s.replace(/ of /g," nof ")   
-s=s.replace(/ on /g," non ")   
-s=s.replace(/ only /g," nonly ")   
-s=s.replace(/ or /g," nor ")   
-s=s.replace(/ outside /g," noutside ")   
-s=s.replace(/ plus /g," nplus ")   
-s=s.replace(/ should /g," nshould ")   
-s=s.replace(/ that /g," nthat ")   
-s=s.replace(/ their /g," ntheir ")   
-s=s.replace(/ to /g," nto ")   
-s=s.replace(/ was /g," nwas ")   
-s=s.replace(/ what /g," nwhat ")   
-s=s.replace(/ when /g," nwhen ")   
-s=s.replace(/ where /g," nwhere ")   
-s=s.replace(/ whether /g," nwhether ")   
-s=s.replace(/ which /g," nwhich ")   
-s=s.replace(/ who /g," nwho ")   
-s=s.replace(/ why /g," nwhy ")   
-s=s.replace(/ will /g," nwill ")   
-s=s.replace(/ with /g," nwith ")   
-s=s.replace(/ without /g," nwithout ")   
-s=s.replace(/ would /g," nwould ")   
-//   
-$("#theoutput").val(s)
-''''
+        //
+        // breakerbreaker -- a routine to break text into phrases
+        //
+        var s=$("#theinput").val()
+        //
+        // #1 -- regularize line-endings and delete trailing spaces
+        //
+        while (s.indexOf("\r\n")-1) {s=s.replace(/\r\n/g,"\n")}
+        while (s.indexOf("\r")-1) {s=s.replace(/\r/g,"\n")}
+        //
+        while (s.indexOf(" \n")-1) {s=s.replace(/ \n/g,"\n")}
+        //
+        // #2 -- introduce space/linebreak combination at phrases
+        //
+        s=s.replace(/\. /g,". \n")
+        s=s.replace(/, /g,", \n")
+        s=s.replace(/; /g,"; \n")
+        s=s.replace(/: /g,": \n")
+        s=s.replace(/\? /g,"? \n")
+        s=s.replace(/! /g,"! \n")
+        s=s.replace(/\" /g,'" \n')
+        s=s.replace(/\) /g,") \n")
+        //
+        s=s.replace(/ \"/g,' \n"')
+        s=s.replace(/ \(/g," \n(")
+        //
+        s=s.replace(/ -- /g," \n-- \n")
+        //
+        s=s.replace(/ about /g," \nabout ")
+        s=s.replace(/ also /g," \nalso ")
+        s=s.replace(/ and /g," \nand ")
+        s=s.replace(/ as /g," \nas ")
+        s=s.replace(/ because /g," \nbecause ")
+        s=s.replace(/ between /g," \nbetween ")
+        s=s.replace(/ both /g," \nboth ")
+        s=s.replace(/ but /g," \nbut ")
+        s=s.replace(/ by /g," \nby ")
+        s=s.replace(/ could /g," \ncould ")
+        s=s.replace(/ ever /g," \never ")
+        s=s.replace(/ for /g," \nfor ")
+        s=s.replace(/ from /g," \nfrom ")
+        s=s.replace(/ have /g," \nhave ")
+        s=s.replace(/ how /g," \nhow ")
+        s=s.replace(/ if /g," \nif ")
+        s=s.replace(/ in /g," \nin ")
+        s=s.replace(/ inside /g," \ninside ")
+        s=s.replace(/ into /g," \ninto ")
+        s=s.replace(/ is /g," \nis ")
+        s=s.replace(/ may /g," \nmay ")
+        s=s.replace(/ might /g," \nmight ")
+        s=s.replace(/ minus /g," \nminus ")
+        s=s.replace(/ must /g," \nmust ")
+        s=s.replace(/ never /g," \nnever ")
+        s=s.replace(/ of /g," \nof ")
+        s=s.replace(/ on /g," \non ")
+        s=s.replace(/ only /g," \nonly ")
+        s=s.replace(/ or /g," \nor ")
+        s=s.replace(/ outside /g," \noutside ")
+        s=s.replace(/ plus /g," \nplus ")
+        s=s.replace(/ should /g," \nshould ")
+        s=s.replace(/ that /g," \nthat ")
+        s=s.replace(/ their /g," \ntheir ")
+        s=s.replace(/ to /g," \nto ")
+        s=s.replace(/ was /g," \nwas ")
+        s=s.replace(/ what /g," \nwhat ")
+        s=s.replace(/ when /g," \nwhen ")
+        s=s.replace(/ where /g," \nwhere ")
+        s=s.replace(/ whether /g," \nwhether ")
+        s=s.replace(/ which /g," \nwhich ")
+        s=s.replace(/ who /g," \nwho ")
+        s=s.replace(/ why /g," \nwhy ")
+        s=s.replace(/ will /g," \nwill ")
+        s=s.replace(/ with /g," \nwith ")
+        s=s.replace(/ without /g," \nwithout ")
+        s=s.replace(/ would /g," \nwould ")
+        //
+        $("#theoutput").val(s)
+
+
 
 ###  ***
 
