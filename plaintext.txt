@@ -8,7 +8,6 @@ a little javascript routine to get better prose diffs
 
 ## all you'd really need is a hammer,<br>but learn how to notch your nails,<br>so as to use the github screwdriver
 
-
 * * *
 * * *
 * * *
@@ -49,7 +48,7 @@ but even now, with those improvements, there are flaws with the display of prose
 
 and if you add a lot of stuff, it might all go way out of whack.
 
-###  ***
+### \*\*\*
 
 it is fairly well-recognized that things would operate better if each sentence in the text was placed on a separate line.
 
@@ -69,7 +68,7 @@ brandon rhodes notes that we should remember that we can "add linefeeds anywhere
 
 the best summary is: **_use linebreaks to split on phrases._**
 
-###  ***
+### \*\*\*
 
 as someone who has used this practice for many decades now, i can assure you it's a useful one during the course of re-writing.
 
@@ -159,9 +158,7 @@ use this little javascript routine to break text into phrases...
         //
         $("#theoutput").val(s)
 
-
-
-###  \*\*\*
+### \*\*\*
 
 after regularizing all your line-endings to the standard "\n" (which might be unnecessary, but let's make sure anyway), "breakerbreaker" then removes any errant "trailing spaces" \-- i.e., each space directly preceding a linebreak -- which is something that you shouldn't have in your text-file anyway. (um, yes, if you are using that stupid markdown convention where 2 spaces at the end of the line force a hard-linebreak, do yourself a favor and change 'em to "&lt;br&gt;" forevermore.)
 
@@ -205,7 +202,7 @@ for prose.<br>
 
 > but this drumbeat ignores one very fundamental fact.
 
-###  \*\*\*
+### \*\*\*
 
 if you want to use "breakerbreaker" on some of your own text, you can fire up the demo program which you find located here:
 
@@ -213,7 +210,7 @@ if you want to use "breakerbreaker" on some of your own text, you can fire up th
 
 that's also a good place to grab the script -- just "view source"...
 
-###  \*\*\*
+### \*\*\*
 
 by the way, this essay is located here:
 
@@ -223,7 +220,7 @@ it's also on medium, here:
 
 > [ http://zenmagiclove.com/simple/breakerbreaker.html][7]
 
-###  \*\*\*
+### \*\*\*
 
 after "breakerbreaker", text is ready for its github diff closeup.
 
@@ -243,7 +240,7 @@ in the meantime, you receive a diff which is extremely clear.
 
 before check-in, run "breakerbreaker"; on check-out, re-join.
 
-###  \*\*\*
+### \*\*\*
 
 of course, github could just insert this script in its diff workflow, and create better diffs for you without you doing all this "work".
 
