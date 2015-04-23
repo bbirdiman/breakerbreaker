@@ -173,36 +173,36 @@ the best way to think of this space/linebreak combination is it represents the e
 
 as a little example, here's what the first four paragraphs from this article look like after they have been through this routine:
 
-> writing   
-is migrating   
-to plain-text   
-with light-markup   
---   
-such   
-as markdown,   
-restructured-text,   
-and asciidoc   
---   
-most especially among developers   
-and tech people,   
-but also authors,   
-and soon everyone,   
-i guarantee it.
->
-> in addition   
-to its biggest benefit,   
-the great flexibility,   
-and the appeal   
-of static blogs,   
-a plain-text workflow   
-also makes a promise   
+> writing<br>
+is migrating<br>
+to plain-text<br>
+with light-markup<br>
+--<br>
+such<br>
+as markdown,<br>
+restructured-text,<br>
+and asciidoc<br>
+--<br>
+most especially among developers<br>
+and tech people,<br>
+but also authors,<br>
+and soon everyone,<br>
+i guarantee it.<br>
+
+> in addition<br>
+to its biggest benefit,<br>
+the great flexibility,<br>
+and the appeal<br>
+of static blogs,<br>
+a plain-text workflow<br>
+also makes a promise<br>
 for convenient version-control.
->
-> ergo,   
-there are constant calls   
-to use github   
-for prose.
->
+
+> ergo,<br>
+there are constant calls<br>
+to use github<br>
+for prose.<br>
+
 > but this drumbeat ignores one very fundamental fact.
 
 ###  \*\*\*
