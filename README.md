@@ -165,13 +165,13 @@ use this little javascript routine to break text into phrases...
 
 ###  ***
 
-after regularizing all your line-endings to the standard "n" (which might be unnecessary, but let's make sure anyway), "breakerbreaker" then removes any errant "trailing spaces" \-- i.e., each space directly preceding a linebreak -- which is something that you shouldn't have in your text-file anyway. (um, yes, if you are using that stupid markdown convention where 2 spaces at the end of the line force a hard-linebreak, do yourself a favor and change 'em to "&lt;br&gt;" forevermore.)
+after regularizing all your line-endings to the standard "\n" (which might be unnecessary, but let's make sure anyway), "breakerbreaker" then removes any errant "trailing spaces" \-- i.e., each space directly preceding a linebreak -- which is something that you shouldn't have in your text-file anyway. (um, yes, if you are using that stupid markdown convention where 2 spaces at the end of the line force a hard-linebreak, do yourself a favor and change 'em to "&lt;br&gt;" forevermore.)
 
 then "breakerbreaker" places a space/linebreak combination next to various "strings" which will typically set off phrases \-- punctuation, conjunctions/disjunctions, prepositions, etc.
 
 the best way to think of this space/linebreak combination is it represents the equivalent of a word-processor soft-return.
 
-(except, of course, github still sees a "n" as a hard-return, so the diff-display will show a sequence of fairly short lines.)
+(except, of course, github still sees a "\n" as a hard-return, so the diff-display will show a sequence of fairly short lines.)
 
 as a little example, here's what the first four paragraphs from this article look like after they have been through this routine:
 
