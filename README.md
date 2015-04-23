@@ -5,9 +5,7 @@ a little javascript routine to get better prose diffs
 
 # how to get better github prose diffs
 
-## all you'd really need is a hammer,  
-but learn how to notch your nails,  
-so as to use the github screwdriver
+## all you'd really need is a hammer,<br>but learn how to notch your nails,<br>so as to use the github screwdriver
 
 ![github-soft-wrapping][1]
 
