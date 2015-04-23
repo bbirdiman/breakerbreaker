@@ -77,7 +77,7 @@ as someone who has used this practice for many decades now, i can assure you it'
 
 but whether or not you choose to write in this particular way \-- maybe you have reasons not to, or can't get in the habit, or you probably just think it looks **_weird_** and it freaks you out -- there is no dispute that it makes version-tracking diffs better.
 
-so you might not want to **_write_** that way, but you'd **_might like_** to have your text be in that format for better version-tracking.
+so you might not want to **_write_** that way, but you **_might like_** to have your text be in that format for better version-tracking.
 
 good news: you can have it both ways! just call "breakerbreaker".
 
