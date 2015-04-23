@@ -1,4 +1,5 @@
 # breakerbreaker
+
 a little javascript routine to get better prose diffs
 
 [Source](http://zenmagiclove.com/simple/breaker.html "Permalink to how to getbetter githubprose diffs")
@@ -7,13 +8,11 @@ a little javascript routine to get better prose diffs
 
 ## all you'd really need is a hammer,<br>but learn how to notch your nails,<br>so as to use the github screwdriver
 
-![github-soft-wrapping][1]
-
 * * *
 * * *
 * * *
 
-**writing is migrating to plain-text with light-markup** \-- such as markdown, restructured-text, and asciidoc -- most especially among developers and tech people, but also authors, and soon everyone, i guarantee it.
+**writing is migrating to plain-text with light-markup** -- such as markdown, restructured-text, and asciidoc -- most especially among developers and tech people, but also authors, and soon everyone, i guarantee it.
 
 in addition to its biggest benefit, the great flexibility, and the appeal of static blogs, a plain-text workflow also makes a promise for convenient version-control.
 
@@ -49,7 +48,7 @@ but even now, with those improvements, there are flaws with the display of prose
 
 and if you add a lot of stuff, it might all go way out of whack.
 
-###  ***
+### \*\*\*
 
 it is fairly well-recognized that things would operate better if each sentence in the text was placed on a separate line.
 
@@ -69,11 +68,11 @@ brandon rhodes notes that we should remember that we can "add linefeeds anywhere
 
 the best summary is: **_use linebreaks to split on phrases._**
 
-###  ***
+### \*\*\*
 
 as someone who has used this practice for many decades now, i can assure you it's a useful one during the course of re-writing.
 
-but whether or not you choose to write in this particular way \-- maybe you have reasons not to, or can't get in the habit, or you probably just think it looks **_weird_** and it freaks you out -- there is no dispute that it makes version-tracking diffs better.
+but whether or not you choose to write in this particular way -- maybe you have reasons not to, or can't get in the habit, or you probably just think it looks **_weird_** and it freaks you out -- there is no dispute that it makes version-tracking diffs better.
 
 so you might not want to **_write_** that way, but you **_might like_** to have your text be in that format for better version-tracking.
 
@@ -159,13 +158,11 @@ use this little javascript routine to break text into phrases...
         //
         $("#theoutput").val(s)
 
+### \*\*\*
 
+after regularizing all your line-endings to the standard "\n" (which might be unnecessary, but let's make sure anyway), "breakerbreaker" then removes any errant "trailing spaces" -- i.e., each space directly preceding a linebreak -- which is something that you shouldn't have in your text-file anyway. (um, yes, if you are using that stupid markdown convention where 2 spaces at the end of the line force a hard-linebreak, do yourself a favor and change 'em to "&lt;br&gt;" forevermore.)
 
-###  ***
-
-after regularizing all your line-endings to the standard "\n" (which might be unnecessary, but let's make sure anyway), "breakerbreaker" then removes any errant "trailing spaces" \-- i.e., each space directly preceding a linebreak -- which is something that you shouldn't have in your text-file anyway. (um, yes, if you are using that stupid markdown convention where 2 spaces at the end of the line force a hard-linebreak, do yourself a favor and change 'em to "&lt;br&gt;" forevermore.)
-
-then "breakerbreaker" places a space/linebreak combination next to various "strings" which will typically set off phrases \-- punctuation, conjunctions/disjunctions, prepositions, etc.
+then "breakerbreaker" places a space/linebreak combination next to various "strings" which will typically set off phrases -- punctuation, conjunctions/disjunctions, prepositions, etc.
 
 the best way to think of this space/linebreak combination is it represents the equivalent of a word-processor soft-return.
 
@@ -173,39 +170,39 @@ the best way to think of this space/linebreak combination is it represents the e
 
 as a little example, here's what the first four paragraphs from this article look like after they have been through this routine:
 
-> writing   
-is migrating   
-to plain-text   
-with light-markup   
-\--   
-such   
-as markdown,   
-restructured-text,   
-and asciidoc   
-\--   
-most especially among developers   
-and tech people,   
-but also authors,   
-and soon everyone,   
+> writing<br>
+is migrating<br>
+to plain-text<br>
+with light-markup<br>
+--<br>
+sucj<br>
+as markdown,<br>
+restructured-text,<br>
+and asciidoc<br>
+--<br>
+most especially among developers<br>
+and tech people,<br>
+but also authors,<br>
+and soon everyone,<br>
 i guarantee it.
 >
-> in addition   
-to its biggest benefit,   
-the great flexibility,   
-and the appeal   
-of static blogs,   
-a plain-text workflow   
-also makes a promise   
+> in addition<br>
+to its biggest benefit,<br>
+the great flexibility,<br>
+and the appeal<br>
+of static blogs,<br>
+a plain-text workflow<br>
+also makes a promise<br>
 for convenient version-control.
 >
-> ergo,   
-there are constant calls   
-to use github   
+> ergo,<br>
+there are constant calls<br>
+to use github<br>
 for prose.
 >
 > but this drumbeat ignores one very fundamental fact.
 
-###  ***
+### \*\*\*
 
 if you want to use "breakerbreaker" on some of your own text, you can fire up the demo program which you find located here:
 
@@ -213,7 +210,7 @@ if you want to use "breakerbreaker" on some of your own text, you can fire up th
 
 that's also a good place to grab the script -- just "view source"...
 
-###  ***
+### \*\*\*
 
 by the way, this essay is located here:
 
@@ -223,7 +220,7 @@ it's also on medium, here:
 
 > [ http://zenmagiclove.com/simple/breakerbreaker.html][7]
 
-###  ***
+### \*\*\*
 
 after "breakerbreaker", text is ready for its github diff closeup.
 
@@ -243,7 +240,7 @@ in the meantime, you receive a diff which is extremely clear.
 
 before check-in, run "breakerbreaker"; on check-out, re-join.
 
-###  ***
+### \*\*\*
 
 of course, github could just insert this script in its diff workflow, and create better diffs for you without you doing all this "work".
 
@@ -277,8 +274,7 @@ and here's some version-tracking on the gettysburg address:
 
 > [ http://zenmagiclove.com/misc/gabal/gabal.html][14]
 
-##   
-that's all! thanks for reading...
+## that's all! thanks for reading...
 
 ## -bowerbird
 
