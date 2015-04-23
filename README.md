@@ -83,7 +83,7 @@ good news: you can have it both ways! just call "breakerbreaker".
 
 use this little javascript routine to break text into phrases...
 
->   
+''''
 //   
 // breakerbreaker -- a routine to break text into phrases   
 //   
@@ -164,6 +164,7 @@ s=s.replace(/ without /g," nwithout ")
 s=s.replace(/ would /g," nwould ")   
 //   
 $("#theoutput").val(s)
+''''
 
 ###  ***
 
