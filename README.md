@@ -167,8 +167,7 @@ $("#theoutput").val(s)
 
 ###  ***
 
-after regularizing all your line-endings to the standard "n" (which might be unnecessary, but let's make sure anyway), "breakerbreaker" then removes any errant "trailing spaces" \-- i.e., each space directly preceding a linebreak -- which is something that you shouldn't have in your text-file anyway. (um, yes, if you are using that stupid markdown convention where 2 spaces at the end of the line force a hard-linebreak, do yourself a favor and change 'em to "
-" forevermore.)
+after regularizing all your line-endings to the standard "n" (which might be unnecessary, but let's make sure anyway), "breakerbreaker" then removes any errant "trailing spaces" \-- i.e., each space directly preceding a linebreak -- which is something that you shouldn't have in your text-file anyway. (um, yes, if you are using that stupid markdown convention where 2 spaces at the end of the line force a hard-linebreak, do yourself a favor and change 'em to "&lt;br&gt;" forevermore.)
 
 then "breakerbreaker" places a space/linebreak combination next to various "strings" which will typically set off phrases \-- punctuation, conjunctions/disjunctions, prepositions, etc.
 
