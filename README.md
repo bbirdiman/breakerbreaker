@@ -218,7 +218,7 @@ by the way, this essay is located here:
 
 it's also on medium, here:
 
-> [ http://zenmagiclove.com/simple/breakerbreaker.html][7]
+> [ https://medium.com/the-bower/how-to-get-better-github-prose-diffs-dc7b52484dc4][7]
 
 ### \*\*\*
 
